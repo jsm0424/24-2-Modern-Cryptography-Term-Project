@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Flip Game with HE</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Coin Flip Game with Homomorphic Encryption</h1>
+        <p>Pick Head or Tail, and see if you win!</p>
+        <div class="buttons">
+            <button onclick="flipCoin(0)">Head</button>
+            <button onclick="flipCoin(1)">Tail</button>
+        </div>
+        <div class="coin-container">
+            <div id="coin" class="coin">🪙</div>
+        </div>
+        <h2 id="outcome">Make a choice!</h2>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+
+        <!-- Encrypted Data Visualization -->
+        <h3>Homomorphic Encryption Details</h3>
+        <p><b>Encrypted User Choice:</b> <span id="encryptedUserChoice"></span></p>
+        <p><b>Encrypted Coin Flip:</b> <span id="encryptedCoinFlip"></span></p>
+        <p><b>Encrypted Comparison Result:</b> <span id="encryptedResult"></span></p>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
